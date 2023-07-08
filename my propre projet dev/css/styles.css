@@ -1,0 +1,1172 @@
+
+
+/* ************ GOOGLE FONT ******************** */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ***************** ICONS BOOSTRAP ************************ */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+:root{
+    --bgbody:#ffd7d7;
+    --mybackground:#00000f;
+    --mycolor:#fff;
+    --myparagraphcolor:#535353;
+    --myyellow:#d98f00;
+    --mypadding:0 4rem;
+    --my2padding:22rem 4rem;
+    --myblack:#000;
+    --myhovercolor:#d98f00;
+    --mygradient:li
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    transition: .5s all;
+    letter-spacing: 1.5px;
+    scroll-behavior: smooth;
+}
+
+/* *********************** PARTIE PRINCIPALE DU PAGE ************************ */
+
+body{
+    background: var(--bgbody);
+}
+a{
+    color: var(--mycolor);
+}
+
+
+#partiePrincipale{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* ************************ TETE DU PAGE ******************* */
+
+.Tete-du-Page #together{
+    display: none;
+}
+
+.Tete-du-Page .bi-list{
+    font-size: 2rem;
+    color: var(--mycolor);
+    cursor: pointer;
+    border-radius: .5rem;
+    border: 2px solid var(--mycolor);
+    padding: 0 .2px;
+    display: none;
+}
+
+.Tete-du-Page{
+    width: 100%;
+    height: 15vh;
+    background:var(--mybackground);
+    color: var(--mycolor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--mypadding);
+    position: fixed;
+    z-index: 1000;
+    overflow: hidden;
+    box-shadow: 0 0 2px .5px var(--myparagraphcolor);
+}
+
+.boxLogos a{
+    color: var(--myyellow);
+}
+
+.boxLogos:hover{
+    transform: rotate(360deg);
+    transition: 2.5s;
+    text-shadow: 15px 0 3px var(--myyellow);
+}
+
+.Tete-du-Page a{
+    padding: 0 .3rem;
+}
+
+.Tete-du-Page a:hover{
+    color: var(--myhovercolor);
+}
+
+/* a.dropdown{
+    display: block;
+} */
+
+/* ************************** PAGE D'ACCUEILLE ***************** */
+
+#containerAccueille{
+    position: relative;
+    height: 85vh;
+    display: flex;
+    background: var(--mybackground);
+    justify-content: space-between;
+    align-items: center;
+    padding: 25.5rem 4rem;
+}
+
+#containerAccueille::after{
+    content: "";
+    position: absolute;
+    top: 30;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: url(../FAM\(37\).jpg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: blur(50px);
+    opacity: .1;
+}
+
+.nomProjet{
+    color: var(--myparagraphcolor);
+    font-size:1.2rem;
+    line-height: 3;
+}
+
+.titreAccueille{
+    color: var(--myyellow);
+    line-height: 3;
+}
+
+.explication{
+    color: var(--myparagraphcolor);
+    line-height: 1.5;
+}
+
+.accueil .linkAccueil a{
+    padding: .8rem 2rem;
+    background: var(--myyellow);
+    line-height: 10;
+}
+
+.accueil .linkAccueil a:hover{
+    opacity: .6;
+}
+
+.boxImageAccueille img{
+    position: relative;
+    height: 85vh;
+}
+
+.boxImageAccueille img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    opacity: .5;
+}
+
+/* ************************************* APROPOS ***************************** */
+
+#containerApropos{
+    position: relative;
+    height: 85vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--my2padding);
+}
+
+.boxImageApropos img{
+    height: 85vh;
+}
+
+.boxImageApropos img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    opacity: .5;
+}
+
+.boxTextApropos h2{
+    color: var(--myyellow);
+    line-height: 3.5;
+}
+
+.boxTextApropos p{
+    line-height: 1.5;
+    color: var(--myparagraphcolor);
+}
+
+.boxTextApropos a{
+    background:var(--myyellow);
+    padding: .8rem 2rem;
+    line-height: 8;
+}
+
+.boxTextApropos a:hover{
+    opacity: .6;
+}
+
+
+/* **************************** SERVICE ************************* */
+
+#containerService{
+    position: relative;
+    height: 100vh;
+    background: var(--mybackground);
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2rem;
+    padding: 7rem 4rem;
+    transition: 3s all;
+}
+
+
+.formationDetail{
+    background: var(--myblack);
+    inset: 2px;
+}
+
+#containerService .boxEtude{
+    position: relative;
+    width: 20rem;
+    height: 31rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #000017;
+    text-align: center;
+    cursor: pointer;
+    border-radius: .7rem;
+    box-shadow: 5px 3px 3px  var(--myblack);
+}
+
+.contimg1{
+    position: relative;
+    background: var(--myblack);
+    border-radius: 80%;
+    filter: 5px;
+}
+
+#containerService img{
+    height: 14rem;
+    width: 14rem;
+    border-radius: 80%;
+    background: #000017;
+}
+
+
+#containerService .les-icones-start i{
+    color: var(--myyellow);
+    line-height: 2.3;
+    font-size: 1.5rem;
+}
+
+#containerService .boxPartage{
+    display: flex;
+}
+
+#containerService .boxPartage{
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    transition: 5s linear;
+}
+
+#containerService .boxPartage a{
+    position: relative;
+    color: var(--mycolor);
+    border: 1px solid var(--myparagraphcolor);
+    background: var(--myyellow);
+    padding: .5rem;
+    display: none; 
+    transition: 2s;
+}
+
+#containerService :hover .boxPartage a{
+    transition: 2s;
+    display: flex;
+    
+}
+
+#containerService .boxPartage a:hover{
+    background: var(--myhovercolor);
+    transform: scale(1.3);
+    z-index: 100;
+}
+
+#containerService .title{
+    line-height: 2.6;
+    color: var(--mycolor);
+}
+
+#containerService .apropos{
+    color: var(--myparagraphcolor);
+}
+
+/* ********************************* DEVELOPPEUR ****************************** */
+/* .mainDeveloppeur{
+    
+} */
+
+#containerDeveloppeur{
+    position: relative;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 4rem;
+    padding: 7.5rem 4rem;
+    transition: 3s all;
+    background: var(--mybackground);
+} 
+
+#containerDeveloppeur .boxContenuDeveloppeur1{
+    display: flex;
+    line-height: 1.4;
+    justify-content: space-between;
+}
+
+#containerDeveloppeur .boxContenuDeveloppeur2{
+    display: flex;
+    justify-content: space-between;
+}
+
+#containerDeveloppeur .devFontEnd{
+    width: 19rem;
+    height: 21rem;
+    background: var(--mycolor);
+    border-radius: .5rem;
+    position: relative;
+    font-size: 1rem;
+}
+
+#containerDeveloppeur .les-icones-start{
+    font-size: 1rem;
+    color: var(--myhovercolor);
+    margin: 2rem 1.6rem;
+
+}
+
+#containerDeveloppeur  .apropos{
+    margin: .5rem 0;
+    text-align: center;
+    line-height: 1.5;
+    color: var(--myparagraphcolor);
+}
+
+#containerDeveloppeur .developpeurImage{
+    display: flex;
+    align-items: center;
+    padding: 1.1rem 1.5rem;
+}
+
+#containerDeveloppeur .developpeurImage img{
+    position: relative;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 60%;
+    border: 3px solid var(--myyellow);
+    background: var(--myparagraphcolor);
+    cursor: pointer;
+}
+
+#containerDeveloppeur .developpeurImage img:hover{
+    transform: scale(1.2);
+}
+
+#containerDeveloppeur .nomDev{
+    line-height: 1.8;
+}
+
+.developpeurImage{
+    background: #000017;
+    width: 100%;
+    margin: 3rem 0;
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    color: var(--myparagraphcolor);
+    gap: .9rem;
+    border: .5px solid var(--myhovercolor);
+    border-top: transparent;
+}
+
+/* 
+*********************************** CONTACT *************************************
+ */
+
+ #containerContact{
+    display: flex;
+    position: relative;
+    height: 85vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 23rem 4rem;
+    transition: 3s all;
+ }
+
+ .box{
+    position: relative;
+    width: 50%;
+    height: 100vh;
+    border-radius: 5px;
+    background: var(--mycolor);  
+}
+
+.formulaire{
+    position: relative;
+    width: 100%;
+    height: 85vh;
+    border-radius: 5px;
+    background: var(--mycolor);
+    border-radius: 5px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+.formulaire h2{
+    color: var(--myhovercolor);
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.formulaire {
+    display: flex;
+}
+
+.formulaire .inputBox{
+    position: relative;
+    margin: .5rem;
+}
+
+.formulaire .inputBox input{
+    position: relative;
+    padding: 20px 14px ;
+    background: transparent;
+    outline: none;
+    width: 28rem;
+    border: 1px solid var(--myparagraphcolor);
+    color: var(--myparagraphcolor) ;
+    font-size: 1rem;
+    letter-spacing: 0.09em;
+    z-index: 10;
+    opacity: .5px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.formulaire .inputBox span{
+    position: absolute;
+    bottom: 1.1rem;
+    left: 0;
+    margin: 0 10px;
+    padding: 2px 8px;
+    pointer-events: none;
+    color: var(--myparagraphcolor);
+    font-size: 1rem;
+    letter-spacing: 0.09em;
+    background: var(--mycolor);
+    z-index: 100;
+}
+
+.formulaire .inputBox input:valid ~ span,
+.formulaire .inputBox input:focus ~ span{
+    /* color: var(--myhovercolor); */
+    background: var(--mycolor); 
+    font-size: .80rem;
+    transform: translateY(-33px);
+    z-index: 998;
+    
+}
+
+textarea{
+    margin: 1.2rem 0;
+    outline: none;
+    height: 8rem;
+    background: transparent;
+    border: 3px solid var(--mybackground);
+    border-radius: 8px;
+    color: var(--myparagraphcolor);
+    padding: 1.5rem;
+}
+
+.formulaire [type=submit]{
+    background: var(--mybackground);
+    color: var(--mycolor);
+    width: 15rem;
+    padding: 12px 0;
+    font-size: 1.5rem;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+    border-radius: 0.5em;
+}
+
+.formulaire [type=submit]:hover{
+    opacity: .90;
+}
+
+.imageContact img{
+    height: 85vh;
+}
+
+.imageContact img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    opacity: .5;
+}
+
+
+/* ************************************************* FOOTER ***************************** */
+
+.pied-du-Page{
+    position: relative;
+    height: 85vh;
+    background: var(--mybackground);
+    color: var(--myhovercolor);
+    transition: 3s all;
+}
+
+.boxFooter2{
+    position: relative;
+    height: 93%;
+    display: flex;
+    color: var(--myhovercolor);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 4rem;
+    transition: 3s all;
+}
+
+.pied-du-Page .containerFooter{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.titleFooter{
+    position: relative;
+    line-height: 4;
+}
+
+.titleFooter h3::before{
+    content: "";
+    position: absolute;
+    width: 4rem;
+    height: 3px;
+    background: #ff0000;
+    left: 0;
+    bottom: 10px;
+}
+
+.aboutFooter{
+    line-height: 3;
+    position: relative;
+}
+
+.aboutFooter ul li a{
+    color: var(--myparagraphcolor);
+}
+
+.aboutFooter ul li a:hover{
+    border: 3px solid var(--mycolor);
+    padding: 8px 6px;
+    border-right: transparent;
+    border-top: transparent;
+    border-bottom: transparent;
+    color: var(--mycolor);
+}
+
+.socials{
+    /* background: #000; */
+    margin: .8rem 0;
+}
+.socials ul{
+    display: flex;
+    gap: 1rem;
+    font-size: 1.5rem;  
+}
+
+.socials ul li{
+    background-color: var(--mycolor);
+    padding: .5rem .7rem;
+    border-radius: 50%;
+    
+}
+
+.socials ul li:hover{
+    transform: rotate(360deg);
+    transition: 1s all linear ease-in;
+}
+
+.socials ul li a{
+    color: var(--myblack);
+}
+
+.socials ul .facebook{
+    padding: 0 .2rem;
+} 
+
+.boxCopyRigt{
+    background:#000012;
+    height: 7%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: var(--mycolor);
+    justify-content: center;
+    gap: 20rem;
+    color: var(--myparagraphcolor);
+    box-shadow: 2px 0px 2px 0 var(--myparagraphcolor);
+    padding: 0 4rem;
+}
+
+
+/* 
+******************************************************************************************************
+Media Query
+******************************************************************************************************
+*/
+
+@media (max-width:1024px) {
+    .Tete-du-Page{
+        font-size: .8rem;
+        padding: 0 4rem;
+    }
+
+    .Tete-du-Page ul{
+        gap: 0 1rem ;
+    }
+
+    #containerAccueille{
+        padding: 21rem 4rem;
+    }
+
+    .explication{
+        font-size: .9rem;
+    }
+
+    .boxImageAccueille img{
+        height: 50vh;
+    }
+
+    /* APROPOS */
+    #containerApropos{
+        padding: 21rem 4rem;
+    }
+
+    .boxTextApropos p{
+        font-size: .9rem;
+    }
+
+    .boxImageApropos img{
+        height: 50vh;
+    }
+
+    .containerService{
+        display:block;
+    }
+
+    /* SERVICES */
+
+    #containerService{
+        position: relative;
+        /* height: 100vh; */
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 2rem;
+        padding: 9rem 8rem;
+        background: var(--mybackground);
+        overflow: scroll;
+        
+    } 
+    #containerService .boxEtude{
+        height: 25rem
+    }
+    
+
+    #containerService img{
+        height: 10rem;
+        width: 10rem;
+        border-radius: 80%;
+        background: #000017;
+    }
+
+
+    /* developpeur */
+
+    #containerDeveloppeur{
+        position: relative;
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 3rem;
+        padding: 7.5rem 8rem;   
+    }
+    
+    #containerDeveloppeur .boxContenuDeveloppeur1{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 6rem;
+    }
+
+    #containerDeveloppeur .boxContenuDeveloppeur2{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    #containerDeveloppeur .devFontEnd{
+        height: 22rem;
+        font-size: .9rem;
+    }
+
+    .imageContact img{
+        display: none;
+    }
+
+    .box{
+        width: auto;
+    }
+
+
+    .pied-du-Page .containerFooter{
+        grid-template-columns: auto auto auto;
+    }
+
+
+    /* FOOTER */
+    
+    .boxFooter2{
+        padding: 0 8rem;
+    }
+
+    .aboutFooter{
+        line-height: 2;
+    }
+
+    .boxCopyRigt{
+        padding: 0 1.5rem;
+    }
+}
+
+
+/* 
+    TABLET GROS
+*/
+@media (max-width:991px){
+    .Tete-du-Page{
+        font-size: .8rem;
+        padding: 0 4rem;
+    }
+
+    .Tete-du-Page ul{
+        gap: 0 1rem ;
+    }
+
+    #containerAccueille{
+        padding: 21rem 4rem;
+    }
+
+    .explication{
+        font-size: .9rem;
+    }
+
+    .boxImageAccueille img{
+        height: 45vh;
+    }
+
+    /* APROPOS */
+    #containerApropos{
+        padding: 21rem 4rem;
+    }
+
+    .boxTextApropos p{
+        font-size: .9rem;
+    }
+
+    .boxImageApropos img{
+        height: 45vh;
+    }
+
+    .containerService{
+        display:block;
+    }
+
+    /* SERVICES */
+
+    #containerService{
+        position: relative;
+        /* height: 100vh; */
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 2rem;
+        padding: 9rem 4rem;
+        background: var(--mybackground);
+        overflow: scroll;
+        
+    } 
+    #containerService .boxEtude{
+        height: 25rem
+    }
+    
+
+    #containerService img{
+        height: 10rem;
+        width: 10rem;
+        border-radius: 80%;
+        background: #000017;
+    }
+
+
+    /* developpeur */
+
+    #containerDeveloppeur{
+        position: relative;
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 3rem;
+        padding: 7.5rem 5rem;   
+    }
+    
+    #containerDeveloppeur .boxContenuDeveloppeur1{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 6rem;
+    }
+
+    #containerDeveloppeur .boxContenuDeveloppeur2{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    #containerDeveloppeur .devFontEnd{
+        height: 22rem;
+        font-size: .9rem;
+    }
+
+    .imageContact img{
+        display: none;
+    }
+
+    .box{
+        width: auto;
+    }
+
+
+    .pied-du-Page .containerFooter{
+        grid-template-columns: auto auto auto;
+    }
+
+
+    /* FOOTER */
+    
+    .boxFooter2{
+        padding: 0 4rem;
+    }
+
+    .aboutFooter{
+        line-height: 2;
+    }
+
+    .boxCopyRigt{
+        padding: 0 4rem;
+        gap: 10rem;
+    }
+}
+
+
+
+
+@media (max-width:768px){
+
+    .Tete-du-Page{
+        overflow: visible;
+    }
+
+    .Tete-du-Page .bi-list{
+        display: block;
+    } 
+
+    .Tete-du-Page .boxNavigateur{
+        position: absolute; 
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--mybackground);
+        border-top-right-radius: 15%;
+        border-right: 4px solid var(--myyellow);
+        border-bottom-right-radius: 10%;
+        width: 60%;
+        height: 100vh;
+        font-size: 1.5rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        display: flex;
+        flex-direction: column;
+        transition: 3s;
+    }
+
+    .Tete-du-Page #together:checked ~ .boxNavigateur{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    .Tete-du-Page .boxNavigateur a {
+        margin: 1.5rem;
+        padding: 1rem;
+        display: block;
+        color: var(--mybackground);
+        color: var(--myparagraphcolor);
+    }
+
+    .Tete-du-Page .boxNavigateur a:hover{
+        color: var(--myhovercolor);
+        border-left: .5rem solid var(--myhovercolor);
+    }
+
+    
+
+
+    /* ACCUEILLE */
+
+    #containerAccueille{
+        padding: 85% 1.5rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* background: red; */
+    }
+
+    .accueil{
+        height: 50%;
+        order: 1;
+        transform: translateY(-310px);
+    }
+
+    .boxImageAccueille img{
+        width: 100%;
+        height: 37%;
+        order: 0;
+        border: 4px solid var(--myhovercolor);
+        border-radius: 50% 0 50% 50%;
+    }
+
+    .nomProjet{
+        line-height: 10px;
+        text-align: center; 
+    }
+
+    .titreAccueille{
+        text-align: center;
+    }
+
+    .explication{
+        font-size: .8rem;
+        text-align: center;
+    }
+
+    .accueil .linkAccueil a{
+        padding: .5rem 1rem;
+        line-height: 5;   
+        margin:0 6rem;
+    }
+   
+    /* APROPOS */
+
+    #containerApropos{
+        flex-direction: column;
+        padding: 30% 1.5rem;
+        height: 100%;
+    }
+
+    .boxImageApropos img{
+        object-fit: cover;
+        height: 40%;
+        width: 100%;
+        opacity: .3;
+    }
+
+    .boxTextApropos{
+        transform: translateY(-340px);
+    }
+
+    .boxTextApropos{
+        text-align: center;
+    }
+
+    .boxTextApropos p{
+        font-size: .9;
+    }
+
+    .boxTextApropos a{
+        background:var(--myyellow);
+        padding: .5rem 1rem;
+        line-height: 4;
+    }
+
+    /* SERVICE */
+
+    #containerService{
+        grid-template-columns: auto;
+        padding: 10rem 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #containerService .boxEtude{
+        margin: 0 1.3rem;
+    }
+
+    /* DEVELOPPEUR */
+
+    #containerDeveloppeur{
+        grid-template-columns: auto;
+        padding: 10rem 4rem; 
+        align-items: center;
+        justify-content: center;
+    }
+
+    #containerDeveloppeur .devFontEnd{
+        margin: 0 1.4rem;
+        width: 18rem;
+    }
+
+    /* CONTACT */
+
+    #containerContact{
+        background: var(--mycolor);
+    }
+
+    form .inputBox input{
+        width: 24rem;
+    }
+
+    textarea{
+        width: 24rem;
+    }
+
+    /* FOOTER */
+    .pied-du-Page .containerFooter{
+        grid-template-columns: auto auto auto;
+        gap: 10%; 
+        justify-content: center;
+        align-items: center; 
+    }
+
+    .pied-du-Page .boxFooter2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+    }
+
+
+    .aboutFooter{
+        line-height: 1.8;
+
+    }
+
+    .titleFooter{
+        line-height: 3;
+        font-size: .9rem;
+    }
+
+    .socials ul li{
+        padding: .2rem .4rem;
+    }
+
+    .boxCopyRigt{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 1.5rem;
+    }
+} 
+
+
+@media (max-width:450px) {
+    .accueil{
+        transform: translateY(-200px);
+    }   
+
+    .nomProjet p{
+        line-height: 2;
+    }
+
+    #containerAccueille{
+        padding: 10rem 1.5rem;
+        justify-content:left;
+        align-items: left;
+    }
+
+    .boxTextApropos h2{
+        line-height: 7;
+    }
+
+    .boxTextApropos p{
+        transform: translateY(-65px);
+    }
+
+    .boxTextApropos a{
+        background:var(--myyellow);
+        padding: .5rem 1rem;
+        line-height: 2;
+    }
+
+
+    #containerService{
+        padding: 10rem 2rem;
+    }
+
+    #containerService .boxEtude{
+        width: 16rem;
+    }
+
+    #containerDeveloppeur{
+        padding: 10rem 1.5rem;
+    }
+
+    #containerDeveloppeur .devFontEnd{
+        width: 16rem;
+        font-size: .8rem;
+        height: 21rem;
+    }
+
+    form .inputBox input{
+        width: 15rem;
+    }
+
+    textarea{
+        width: 15rem;
+    }
+
+    .titleFooter h3{
+        font-size: .8rem;
+    }
+
+    .aboutFooter ul li a{
+        font-size: 8px;
+    }
+
+    .aboutFooter{
+        line-height: 1;
+    }
+
+    .pied-du-Page .containerFooter{
+        grid-template-columns: auto auto;
+        gap: 3rem;
+    }
+
+    .boxCopyRigt{
+        gap: 15px;
+        font-size: 0.6rem;
+    }
+}
